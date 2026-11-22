@@ -1,0 +1,10 @@
+{
+  "tasks": [
+    { "id": "research", "name": "Research", "optimistic": 1, "most_likely": 2, "pessimistic": 4 },
+    { "id": "design", "name": "Design", "optimistic": 2, "most_likely": 3, "pessimistic": 5, "depends_on": ["research"] },
+    { "id": "api", "name": "API implementation", "optimistic": 3, "most_likely": 5, "pessimistic": 8, "depends_on": ["design"] },
+    { "id": "ui", "name": "UI implementation", "optimistic": 2, "most_likely": 4, "pessimistic": 7, "depends_on": ["design"] },
+    { "id": "integration", "name": "Integration", "optimistic": 1, "most_likely": 2, "pessimistic": 4, "depends_on": ["api", "ui"] },
+    { "id": "review", "name": "Review", "optimistic": 1, "most_likely": 1, "pessimistic": 2, "depends_on": ["integration"] }
+  ]
+}

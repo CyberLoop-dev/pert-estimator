@@ -1,0 +1,9 @@
+[project]
+name = "pert-estimator"
+version = "1.0.0"
+description = "Dependency-aware PERT project estimator"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+pert-estimator = "main:main"
